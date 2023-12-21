@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        :root {
+            --text-color: white;
+            /* --primary */
+        }
+        body {
+            background-color: cornsilk;
+        }
+        .logo {
+            position: fixed;
+            opacity: 60%;
+            bottom: 25px;
+            right: 40px;
+            width: 60px;
+        }
+        nav {
+            position: sticky;
+            z-index: 1;
+            top: 0px;
+            background-color: rgb(6, 99, 34);
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 10px 0px;
+            padding: 0px 5px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            list-style: none;
+            color: var(--text-color);
+        }
+        section {
+            box-sizing: border-box;
+            width: 100%;
+            height: 70vh;
+            background-color: rgb(93, 228, 93);
+            /* padding: 50px; */
+            /* clear: both; */
+        }
+        .block {
+            position: relative;
+            top: 50px;
+            display: inline-block;
+            margin: auto;
+            width: 40vw;
+            height: 55vh;
+        }
+        .left {
+            background-color: cornflowerblue;
+            float: left;
+            margin-left: 50px;
+        }
+        .right {
+            background-color: chocolate;
+            margin-right: 50px;
+            float: right;
+        }
+        .text-area {
+            /* height: 25vh; */
+            background-color: grey;
+            border: 2px solid gainsboro;
+            margin: 20px;
+            text-align: center;
+            padding: 100px;
+            border-radius: 20px;
+        }
+        .text-area p {
+            color: var(--text-color);
+            font-size: 34px;
+            /* margin-top: 100px; */
+        }
+        .link {
+            border: 0px;
+            font-size: 20px;
+            padding: 8px 15px;
+            border-radius: 25px;
+            background-color: black;
+            color: var(--text-color);
+        }
+        footer {
+            background-color: navy;
+            color: var(--text-color);
+            font-size: 20px;
+            padding: 50px;
+            text-align: center;
+            width: 100%;
+            /* height: 20vh; */
+        }
+        footer a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <img class="logo" src="ex5 logo.png"/>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About Us</li>
+            <li>Support</li>
+        </ul>
+    </nav>
+    <section>
+        <div class="block left"></div>
+        <div class="block right"></div>
+    </section>
+    <div class=" text-area">
+        <p class="content">Welcome to the Sigma Web Development Express</p>
+        <a class="content" href="https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&feature=shared"><input type="button" class="link" value="Click Here"></a>
+    </div>
+    <footer>
+        <p>Copyright &copy; | <a href="">Zaid Patel</a> | 2023-24</p>
+    </footer>
+    <!--Layout Design: 
+        1. Sticky Navbar
+        2. Two square-ish sections on either side
+        3. Both sections are on a background 'bg-div' with some color
+        4. The sections have their own color as well
+        5. One more rectangle below 'bg-div' with a border-radius & text "Welcome to this Sigma Web Development Express"
+        6. Logo at the bottom-right which is fixed
+        7. Footer
+        -->
+</body>
+
+</html>
